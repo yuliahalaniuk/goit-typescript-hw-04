@@ -28,7 +28,7 @@ type PropsProvider = {
   children: ReactNode;
 };
 
-type SelectedMenu = { id: MenuIds };
+type SelectedMenu = { id?: MenuIds };
 
 function MenuProvider({ children }: PropsProvider) {
   const [selectedMenu, setSelectedMenu] = useState<SelectedMenu>({});
